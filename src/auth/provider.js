@@ -22,6 +22,7 @@ class AuthProvider extends Component {
 
   componentDidMount () {
     firebase.auth().onAuthStateChanged((user) => {
+      console.log('authStateChanged');
       const isReady = this.state.ready;
       if (!isReady || user !== this.state.user) {
         this.setState(
@@ -34,6 +35,10 @@ class AuthProvider extends Component {
 
   loginWithProvider (provider) {
     return firebase.auth().signInWithPopup(provider);
+  }
+
+  loginWithEmailAndPassword (email, password) {
+    return firebase.auth().signInWithEmailAndPassword(email, password);
   }
 
   loginWithGoogle (options) {
@@ -72,6 +77,7 @@ class AuthProvider extends Component {
           loginWithProvider: this.loginWithProvider,
           loginWithGoogle: this.loginWithGoogle,
           loginWithFacebook: this.loginWithFacebook,
+          loginWithEmailAndPassword: this.loginWithEmailAndPassword,
           logout: this.logout
         }}
       >

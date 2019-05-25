@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "dependencies": {
     "core-decorators": "^0.20.0",
-    "firebase": "^5.0.2",
+    "firebase": "^6.0.2",
     "invariant": "^2.2.4"
   },
   "peerDependencies": {
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julianburr/react-firebase-context.git"
+    "url": "git+https://github.com/jgibson02/react-firebase-context.git"
   },
-  "author": "Julian Burr <hello@julianburr.de>",
+  "author": "John Gibson <dev@johngibson.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/julianburr/react-firebase-context/issues"
+    "url": "https://github.com/jgibson02/react-firebase-context/issues"
   },
-  "homepage": "https://github.com/julianburr/react-firebase-context"
+  "homepage": "https://github.com/jgibson02/react-firebase-context"
 }
